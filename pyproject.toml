@@ -8,15 +8,24 @@ authors = ["Your Name <you@example.com>"]
 python = "~3.9"
 numpy = "^1.22.3"
 scikit-learn = "^1.0.2"
-pandas = "matplotlib"
 matplotlib = "^3.5.1"
 seaborn = "^0.11.2"
 ramp-workflow = "^0.4.0"
 osfclient = "^0.0.5"
 spotipy = "^2.19.0"
+pandas = "^1.4.1"
+ramp-utils = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
 ipykernel = "^6.9.2"
+
+[tool.poetry2conda]
+name = 'spotify-challenge'
+
+[tool.poetry2conda.dependencies]
+osfclient = { channel = 'pip' }
+ramp-workflow = { channel = 'pip' }
+ramp-utils = { channel = 'pip' }
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

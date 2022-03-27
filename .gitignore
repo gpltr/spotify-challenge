@@ -1,2 +1,6 @@
 /.DS_Store
 /.ipynb_checkpoints/
+/.cache
+/__pycache__/
+/data/.ipynb_checkpoints/
+*.csv
