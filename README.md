@@ -5,11 +5,11 @@
 ### Install
 
 To run a submission and the notebook you will need the dependencies listed
-in `requirements.txt`. You can install install the dependencies with the
+in `pyproject.toml`. You can install install the dependencies with `poetry` and the
 following command-line:
 
 ```bash
-pip install -U -r requirements.txt
+poetry install
 ```
 
 If you are using `conda`, we provide an `environment.yml` file for similar
